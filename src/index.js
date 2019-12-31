@@ -37,9 +37,12 @@ app.get("/authcallback", async (req, res) => {
     url: "https://polarremote.com/v2/oauth2/token"
   };
 
-  const response = await axios(options);
-
-  return res.send(response);
+  try {
+    const response = await axios(options);
+    return res.send(response);
+  } catch (error) {
+    return res.status(500).send({ error });
+  }
 });
 
 app.get("/", (req, res) => res.send("Hello World!"));
