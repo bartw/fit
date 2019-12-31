@@ -1,0 +1,26 @@
+{
+  "name": "fit",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bartw/fit.git"
+  },
+  "author": "Bart Wijnants",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bartw/fit/issues"
+  },
+  "homepage": "https://github.com/bartw/fit#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  }
+}
